@@ -277,7 +277,7 @@ public class BashTalkServer {
 								c.setMuted(false);
 								
 								// Notify the group
-								broadcastMsg(getTimestamp() + " <" + getUsername() + "> unmuted <" + c.getUsername() + ">.");
+								broadcastMsg(getTimestamp() + " " + getUsername() + " unmuted " + c.getUsername() + ".");
 								
 							}
 							else
@@ -314,7 +314,7 @@ public class BashTalkServer {
 								c.directMsg("banned"); // Trigger banned routine in client
 								
 								// Notify the group
-								broadcastMsg(getTimestamp() + " <" + c.getUsername() + "> was banned from the server.");
+								broadcastMsg(getTimestamp() + " " + c.getUsername() + " was banned from the server.");
 								
 							}
 							else if (c == null)
